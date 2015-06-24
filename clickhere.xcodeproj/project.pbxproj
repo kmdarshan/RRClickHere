@@ -15,6 +15,7 @@
 		7DA47A721B376F91002C0046 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DA47A701B376F91002C0046 /* LaunchScreen.xib */; };
 		7DA47A7E1B376F91002C0046 /* clickhereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA47A7D1B376F91002C0046 /* clickhereTests.m */; };
 		7DA47A891B3A8278002C0046 /* RRMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA47A881B3A8278002C0046 /* RRMapViewController.m */; };
+		7DA47A8B1B3A83E5002C0046 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA47A8A1B3A83E5002C0046 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		7DA47A7D1B376F91002C0046 /* clickhereTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = clickhereTests.m; sourceTree = "<group>"; };
 		7DA47A871B3A8278002C0046 /* RRMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMapViewController.h; sourceTree = "<group>"; };
 		7DA47A881B3A8278002C0046 /* RRMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMapViewController.m; sourceTree = "<group>"; };
+		7DA47A8A1B3A83E5002C0046 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA47A8B1B3A83E5002C0046 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 		7DA47A551B376F91002C0046 = {
 			isa = PBXGroup;
 			children = (
+				7DA47A8A1B3A83E5002C0046 /* MapKit.framework */,
 				7DA47A601B376F91002C0046 /* clickhere */,
 				7DA47A7A1B376F91002C0046 /* clickhereTests */,
 				7DA47A5F1B376F91002C0046 /* Products */,

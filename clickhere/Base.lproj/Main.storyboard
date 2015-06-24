@@ -115,12 +115,30 @@
                     <view key="view" contentMode="scaleToFill" id="a9V-vN-3zM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VqQ-QH-Joz">
+                                <rect key="frame" x="0.0" y="38" width="599" height="44"/>
+                                <items>
+                                    <navigationItem title="Map" id="OmS-WA-QuR">
+                                        <barButtonItem key="backBarButtonItem" title="Cancel" id="Jtx-cg-KuX"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hLi-oa-3e4">
+                                <rect key="frame" x="-1" y="82" width="600" height="530"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VqQ-QH-Joz" firstAttribute="leading" secondItem="a9V-vN-3zM" secondAttribute="leadingMargin" constant="1" id="c1s-Xr-a9V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VqQ-QH-Joz" secondAttribute="trailing" constant="1" id="ntP-fk-weQ"/>
+                            <constraint firstItem="VqQ-QH-Joz" firstAttribute="top" secondItem="a9V-vN-3zM" secondAttribute="topMargin" constant="20" id="sY3-Vi-2KN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCs-Xa-7Dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716" y="1264"/>
+            <point key="canvasLocation" x="739" y="1265"/>
         </scene>
     </scenes>
 </document>
