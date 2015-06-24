@@ -14,6 +14,7 @@
 		7DA47A6F1B376F91002C0046 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DA47A6E1B376F91002C0046 /* Images.xcassets */; };
 		7DA47A721B376F91002C0046 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DA47A701B376F91002C0046 /* LaunchScreen.xib */; };
 		7DA47A7E1B376F91002C0046 /* clickhereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA47A7D1B376F91002C0046 /* clickhereTests.m */; };
+		7DA47A891B3A8278002C0046 /* RRMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA47A881B3A8278002C0046 /* RRMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7DA47A771B376F91002C0046 /* clickhereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clickhereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA47A7C1B376F91002C0046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DA47A7D1B376F91002C0046 /* clickhereTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = clickhereTests.m; sourceTree = "<group>"; };
+		7DA47A871B3A8278002C0046 /* RRMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMapViewController.h; sourceTree = "<group>"; };
+		7DA47A881B3A8278002C0046 /* RRMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				7DA47A681B376F91002C0046 /* ViewController.h */,
 				7DA47A691B376F91002C0046 /* ViewController.m */,
 				7DA47A6B1B376F91002C0046 /* Main.storyboard */,
+				7DA47A871B3A8278002C0046 /* RRMapViewController.h */,
+				7DA47A881B3A8278002C0046 /* RRMapViewController.m */,
 				7DA47A6E1B376F91002C0046 /* Images.xcassets */,
 				7DA47A701B376F91002C0046 /* LaunchScreen.xib */,
 				7DA47A611B376F91002C0046 /* Supporting Files */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA47A6A1B376F91002C0046 /* ViewController.m in Sources */,
+				7DA47A891B3A8278002C0046 /* RRMapViewController.m in Sources */,
 				7DA47A671B376F91002C0046 /* AppDelegate.m in Sources */,
 				7DA47A641B376F91002C0046 /* main.m in Sources */,
 			);
@@ -416,6 +422,7 @@
 				7DA47A831B376F91002C0046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DA47A841B376F91002C0046 /* Build configuration list for PBXNativeTarget "clickhereTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				7DA47A861B376F91002C0046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

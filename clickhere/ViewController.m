@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "RRMapViewController.h"
 @interface ViewController ()
 
 @end
@@ -18,8 +18,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"RRMapViewSegue"]) {
+        RRMapViewController *mapController = (RRMapViewController *)[segue destinationViewController];
+        mapController.origin = self.sourceLocation.text;
+        mapController.destination = self.destinationLocation.text;
+    }
+}
+
 - (IBAction)clickStartButton:(id)sender {
     NSLog(@"clicked statbutton %@", self.sourceLocation.text);
+    [self performSegueWithIdentifier:@"RRMapViewSegue" sender:sender];
 }
 
 - (void)didReceiveMemoryWarning {

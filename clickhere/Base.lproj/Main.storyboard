@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="enter starting address" borderStyle="bezel" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7l1-1o-1BS">
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="enter starting address" borderStyle="bezel" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7l1-1o-1BS">
                                 <rect key="frame" x="97" y="94" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -64,15 +65,15 @@
                                 <exclude reference="l3h-nW-wQa"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="H2E-K2-op7"/>
-                                <exclude reference="syY-IU-WAo"/>
-                                <exclude reference="tUK-G9-rDn"/>
                                 <exclude reference="EIx-aq-guG"/>
                                 <exclude reference="FeK-fL-AOF"/>
                                 <exclude reference="Od7-Il-Bna"/>
                                 <exclude reference="7RL-02-pU1"/>
                                 <exclude reference="k5a-0R-6Rn"/>
                                 <exclude reference="q3W-HE-DDP"/>
+                                <exclude reference="H2E-K2-op7"/>
+                                <exclude reference="syY-IU-WAo"/>
+                                <exclude reference="tUK-G9-rDn"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -81,15 +82,15 @@
                                 <include reference="l3h-nW-wQa"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="H2E-K2-op7"/>
-                                <include reference="syY-IU-WAo"/>
-                                <include reference="tUK-G9-rDn"/>
                                 <include reference="EIx-aq-guG"/>
                                 <include reference="FeK-fL-AOF"/>
                                 <include reference="Od7-Il-Bna"/>
                                 <include reference="7RL-02-pU1"/>
                                 <include reference="k5a-0R-6Rn"/>
                                 <include reference="q3W-HE-DDP"/>
+                                <include reference="H2E-K2-op7"/>
+                                <include reference="syY-IU-WAo"/>
+                                <include reference="tUK-G9-rDn"/>
                             </mask>
                         </variation>
                     </view>
@@ -97,10 +98,29 @@
                         <outlet property="destinationLocation" destination="hag-GI-DWg" id="chS-9q-xdR"/>
                         <outlet property="sourceLocation" destination="7l1-1o-1BS" id="aJF-A8-lod"/>
                         <outlet property="startButton" destination="l3h-nW-wQa" id="NJV-PM-XkY"/>
+                        <segue destination="YUE-mn-bYE" kind="presentation" identifier="RRMapViewSegue" id="0Ec-zg-nv7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Ko1-Cx-vBx">
+            <objects>
+                <viewController id="YUE-mn-bYE" customClass="RRMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="skv-VT-nqo"/>
+                        <viewControllerLayoutGuide type="bottom" id="HCI-Pj-VW5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a9V-vN-3zM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NCs-Xa-7Dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="1264"/>
         </scene>
     </scenes>
 </document>
